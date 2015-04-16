@@ -10,12 +10,13 @@
 	<platform name="ios">
 		<config-file parent="/*" target="config.xml">
 			<feature name="Atlas">
-				<param name="ios-package" value="CDVAtlas"/>
+				<param name="ios-package" value="AtlasCordova"/>
 			</feature>
 		</config-file>
 		
 		<!-- Plugin Source -->
-		<source-file src="src/ios/atlas-cordova.m"/>
+		<source-file src="src/ios/AtlasCordova.h"/>
+		<source-file src="src/ios/AtlasCordova.m"/>
 		
 		<source-file src="src/ios/ConversationsListViewController.h"/>
 		<source-file src="src/ios/ConversationsListViewController.m"/>
