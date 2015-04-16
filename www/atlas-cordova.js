@@ -1,9 +1,11 @@
 var exec = require('cordova/exec');
 
 exports.showConversations = function(success, error) {
-	exec(success, error, "Atlas", "showConversations");
+	console.log('exec Atlas showConversations []');
+	exec(success, error, "Atlas", "showConversations", []);
 }
 
 exports.hideConversations = function(success, error) {
-	exec(success, error, "Atlas", "hideConversations");
+	console.log('exec Atlas hideConversations []');
+	exec(success, error, "Atlas", "hideConversations", []);
 }

@@ -121,6 +121,7 @@
 		<framework src="src/ios/atlas-src/Frameworks/LayerKit.framework" custom="true" />
 
 		<!-- Resources (Images, Bundles, etc) -->
+		<resource-file src="src/ios/atlas-src/Resources/layer-client-messaging-schema.bundle" />
 		<resource-file src="src/ios/atlas-src/Resources/block.png" />
 		<resource-file src="src/ios/atlas-src/Resources/camera_dark.png" />
 		<resource-file src="src/ios/atlas-src/Resources/chevron.png" />
