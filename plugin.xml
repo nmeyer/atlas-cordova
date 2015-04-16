@@ -102,7 +102,7 @@
 		<source-file src="src/ios/atlas-src/Code/Views/ATLProgressView.m" />
 
 		<!-- Vendor Frameworks/Libraries -->
-		<framework src="src/ios/atlas-src/Frameworks/LayerKit.framework" custome="true" />
+		<framework src="src/ios/atlas-src/Frameworks/LayerKit.framework" custom="true" />
 
 		<!-- iOS Frameworks -->
 		<framework src="libz.dylib" /> <!-- -lz linker flag -->
