@@ -16,6 +16,9 @@
 		
 		<!-- Plugin Source -->
 		<source-file src="src/ios/atlas-cordova.m"/>
+		
+		<source-file src="src/ios/ConversationsListView.h"/>
+		<source-file src="src/ios/ConversationsListView.m"/>
 
 		<!-- Layer Source -->
 		<source-file src="src/ios/atlas-src/Code/Atlas.h" />
