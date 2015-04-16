@@ -101,9 +101,6 @@
 		<source-file src="src/ios/atlas-src/Code/Views/ATLProgressView.h" />
 		<source-file src="src/ios/atlas-src/Code/Views/ATLProgressView.m" />
 
-		<!-- Vendor Frameworks/Libraries -->
-		<framework src="src/ios/atlas-src/Frameworks/LayerKit.framework" custom="true" />
-
 		<!-- iOS Frameworks -->
 		<framework src="libz.dylib" /> <!-- -lz linker flag -->
 		<framework src="CFNetwork.framework" />
@@ -113,6 +110,11 @@
 		<framework src="CoreLocation.framework" />
 		<framework src="AssetsLibrary.framework" />
 		<framework src="ImageIO.framework" />
+		<framework src="QuartzCore.framework" />
+		<framework src="MapKit.framework" />
+
+		<!-- Vendor Frameworks/Libraries -->
+		<framework src="src/ios/atlas-src/Frameworks/LayerKit.framework" custom="true" />
 
 		<!-- Resources (Images, Bundles, etc) -->
 		<resource-file src="src/ios/atlas-src/Resources/block.png" />
