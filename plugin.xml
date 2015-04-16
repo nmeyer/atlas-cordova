@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.groupahead.atlas-cordova" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<name>atlas-cordova</name>
+
+	<js-module name="atlas-cordova" src="www/atlas-cordova.js">
+		<clobbers target="cordova.plugins.atlas-cordova"/>
+	</js-module>
+	
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="Atlas">
+				<param name="ios-package" value="CDVAtlas"/>
+			</feature>
+		</config-file>
+		
+		<!-- Plugin Source -->
+		<source-file src="src/ios/atlas-cordova.m"/>
+
+		<!-- Layer Source -->
+		<source-file src="src/ios/atlas-src/Code/Atlas.h" />
+		<source-file src="src/ios/atlas-src/Code/Atlas.m" />
+
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLAddressBarViewController.h" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLAddressBarViewController.m" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLBaseConversationViewController.h" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLBaseConversationViewController.m" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLConversationListViewController.h" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLConversationListViewController.m" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLConversationViewController.h" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLConversationViewController.m" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLParticipantTableViewController.h" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLParticipantTableViewController.m" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLTypingIndicatorViewController.h" />
+		<source-file src="src/ios/atlas-src/Code/Controllers/ATLTypingIndicatorViewController.m" />
+
+		<source-file src="src/ios/atlas-src/Code/Models/ATLConversationDataSource.h" />
+		<source-file src="src/ios/atlas-src/Code/Models/ATLConversationDataSource.m" />
+		<source-file src="src/ios/atlas-src/Code/Models/ATLDataSourceChange.h" />
+		<source-file src="src/ios/atlas-src/Code/Models/ATLDataSourceChange.m" />
+		<source-file src="src/ios/atlas-src/Code/Models/ATLMediaAttachment.h" />
+		<source-file src="src/ios/atlas-src/Code/Models/ATLMediaAttachment.m" />
+		<source-file src="src/ios/atlas-src/Code/Models/ATLParticipantTableDataSet.h" />
+		<source-file src="src/ios/atlas-src/Code/Models/ATLParticipantTableDataSet.m" />
+
+		<source-file src="src/ios/atlas-src/Code/Protocols/ATLAvatarItem.h" />
+		<source-file src="src/ios/atlas-src/Code/Protocols/ATLConversationPresenting.h" />
+		<source-file src="src/ios/atlas-src/Code/Protocols/ATLMessagePresenting.h" />
+		<source-file src="src/ios/atlas-src/Code/Protocols/ATLParticipant.h" />
+		<source-file src="src/ios/atlas-src/Code/Protocols/ATLParticipantPresenting.h" />
+
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLConstants.h" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLConstants.m" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLErrors.h" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLErrors.m" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLLocationManager.h" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLLocationManager.m" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLMediaInputStream.h" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLMediaInputStream.m" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLMessagingUtilities.h" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLMessagingUtilities.m" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLUIImageHelper.h" />
+		<source-file src="src/ios/atlas-src/Code/Utilities/ATLUIImageHelper.m" />
+
+		<source-file src="src/ios/atlas-src/Code/Views/ATLAddressBarContainerView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLAddressBarContainerView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLAddressBarTextView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLAddressBarTextView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLAddressBarView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLAddressBarView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLAvatarImageView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLAvatarImageView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationCollectionView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationCollectionView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationCollectionViewFooter.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationCollectionViewFooter.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationCollectionViewHeader.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationCollectionViewHeader.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationCollectionViewMoreMessagesHeader.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationCollectionViewMoreMessagesHeader.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationTableViewCell.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationTableViewCell.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLConversationView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLIncomingMessageCollectionViewCell.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLIncomingMessageCollectionViewCell.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLMessageBubbleView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLMessageBubbleView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLMessageCollectionViewCell.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLMessageCollectionViewCell.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLMessageComposeTextView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLMessageComposeTextView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLMessageInputToolbar.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLMessageInputToolbar.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLOutgoingMessageCollectionViewCell.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLOutgoingMessageCollectionViewCell.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLParticipantSectionHeaderView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLParticipantSectionHeaderView.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLParticipantTableViewCell.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLParticipantTableViewCell.m" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLProgressView.h" />
+		<source-file src="src/ios/atlas-src/Code/Views/ATLProgressView.m" />
+
+		<!-- Vendor Frameworks/Libraries -->
+		<framework src="src/ios/atlas-src/Frameworks/LayerKit.framework" custome="true" />
+
+		<!-- iOS Frameworks -->
+		<framework src="libz.dylib" /> <!-- -lz linker flag -->
+		<framework src="CFNetwork.framework" />
+		<framework src="Security.framework" />
+		<framework src="MobileCoreServices.framework" />
+		<framework src="SystemConfiguration.framework" />
+		<framework src="CoreLocation.framework" />
+		<framework src="AssetsLibrary.framework" />
+		<framework src="ImageIO.framework" />
+
+		<!-- Resources (Images, Bundles, etc) -->
+		<resource-file src="src/ios/atlas-src/Resources/block.png" />
+		<resource-file src="src/ios/atlas-src/Resources/camera_dark.png" />
+		<resource-file src="src/ios/atlas-src/Resources/chevron.png" />
+		<resource-file src="src/ios/atlas-src/Resources/layerbell.caf" />
+		<resource-file src="src/ios/atlas-src/Resources/layerLogo.png" />
+		<resource-file src="src/ios/atlas-src/Resources/location_dark.png" />
+		<resource-file src="src/ios/atlas-src/Resources/plus.png" />
+
+	</platform>
+
+</plugin>
