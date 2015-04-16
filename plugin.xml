@@ -4,7 +4,7 @@
 	<name>atlas-cordova</name>
 
 	<js-module name="atlas-cordova" src="www/atlas-cordova.js">
-		<clobbers target="cordova.plugins.atlas-cordova"/>
+		<clobbers target="cordova.plugins.Atlas"/>
 	</js-module>
 	
 	<platform name="ios">
